@@ -1,0 +1,43 @@
+"Type": "check/UnifluxCheck",
+"Description": "Checks a custom JSON export from Revit against an altered Unifluxx JSON",
+"Inputs": {
+    "codeToFind": {
+        "Type": "String"
+    },
+    "stringToFind": {
+        "Type": "String"
+    },
+    "stringToReplace": {
+        "Type": "String"
+    },
+    "checkObjects": {
+        "Type": "Object"
+    },
+    "revObjects": {
+        "Type": "Object"
+    }
+},
+"Outputs": {
+    "output": {
+        "Type": "Object"
+    }
+},
+
+"Config": {
+    "Streaming": false
+},
+"Display": {
+    "InputOrder": [
+        "checkObjects",
+        "revObjects",
+        "codeToFind",
+        "stringToFind",
+        "stringToReplace"
+    ],
+    "OutputOrder": [
+        "output
+    ]
+},
+"Tags": [],
+"UserTags": ["NBS"],["Revit"],["check"]
+}
